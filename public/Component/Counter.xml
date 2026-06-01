@@ -1,0 +1,16 @@
+<templates>
+    <t t-name="Counter">
+        <selection>
+            <h1>Counter</h1>
+            <p>
+                Count: <t t-esc="state.count"/>
+            </p>
+
+            <div>
+                <button t-on-click="increment">+</button>
+                 <button t-on-click="decrement">-</button>
+            </div>
+        </selection>
+    </t>
+    
+</templates>

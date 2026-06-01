@@ -6,4 +6,7 @@ const templates = await FETCH_TEMPLATES();
 mount(Root, document.body, {
   templates,
   dev: DEV, // injected by server
+  env:{
+    name:"hola"
+  }
 });
