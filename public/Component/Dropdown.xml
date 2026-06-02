@@ -1,0 +1,15 @@
+<templates>
+    <t t-name="Dropdown">
+        <div class="dropdown" t-ref="dropdownRef">
+            <button t-on-click="toggleDropdown" >
+            Abrir menu
+            </button>
+            <div t-if="state.isOpen" class="dropdown-content">
+                <p>1</p>
+                <p>2</p>
+                <p>3</p>
+    
+            </div>
+        </div>
+    </t>
+</templates>
