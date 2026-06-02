@@ -2,7 +2,7 @@
   <t t-name="Root">
   <main>
     <div>hello owl in udemy</div>
-    <Counter/>
+    
     </main>
   </t>
 </templates>

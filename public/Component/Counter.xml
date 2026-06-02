@@ -3,12 +3,12 @@
         <selection>
             <h1>Counter</h1>
             <p>
-                Count: <t t-esc="state.count"/>
+                Count: <t t-esc="counter.count"/>
             </p>
 
             <div>
-                <button t-on-click="increment">+</button>
-                 <button t-on-click="decrement">-</button>
+                <button t-on-click="counter.increment">+</button>
+                 <button t-on-click="counter.decrement">-</button>
             </div>
         </selection>
     </t>

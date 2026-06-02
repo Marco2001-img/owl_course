@@ -1,21 +1,27 @@
 import { Component,useState } from "@odoo/owl";
+import { useCounter } from "./hook/useCounter";
 
 
 export class Counter extends Component {
     static template ="Counter";
 
     setup(){
-        this.state = useState({count: 0});
+        this.counter = useCounter(10);
 
     }
 
-    increment()
-    {
-        this.state.count++;
-    }
+    // increment()
+    // {
+    //     this.state.count++;
+    // }
 
-    decrement()
+    // decrement()
+    // {
+    //     this.state.count--;
+    // }
+
+    logCount(mensaje)
     {
-        this.state.count--;
+        console.log(`${mensaje}`)
     }
 }

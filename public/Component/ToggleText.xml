@@ -1,0 +1,7 @@
+<templates>
+    <t t-name="ToggleText">
+        <h1>Toggle Text</h1>
+        <p t-ref="toggletext">Presioname</p>
+        <button t-on-click="toggleTxt">OKEY</button>
+    </t>
+</templates>
